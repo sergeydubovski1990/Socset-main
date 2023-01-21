@@ -20,26 +20,45 @@ export const DialogItem = (props) => {
 
 
 export const Dialogs = (props) => {
+
+    let  MessageData = [
+        {id: 1, name: 'Dzick-pick'},
+    {id: 2, name: 'What are you wont?'},
+    {id: 3, name: 'Eto ne nashi problemi'},
+    {id: 4, name: 'Ne pishi mne bolshe'},
+    {id: 5, name: 'show me your boobs'}
+]
+
+    let dialogsData = [
+        {id: 1, name: 'Sergey'},
+        {id: 2, name: 'Sveta'},
+        {id: 3, name: 'Sasha'},
+        {id: 4, name: 'Ania'},
+        {id: 5, name: 'Djoni'},
+        {id: 6, name: 'Polli'},
+        {id: 7, name: 'Liza'}
+    ]
     return (
+
 
         <div className={s.dialogs}>
             <div className={s.dialogsItems}>
-                <DialogItem name='Sergey' id='1' />
-                <DialogItem name='Sveta' id='2' />
-                <DialogItem name='Sasha' id='3' />
-                <DialogItem name='Ania' id='4' />
-                <DialogItem name='Djoni' id='5' />
-                <DialogItem name='Polli' id='6' />
-                <DialogItem name='Liza' id='7' />
+                <DialogItem name={dialogsData[0].name} id={dialogsData[0].id} />
+                <DialogItem name={dialogsData[1].name} id={dialogsData[1].id} />
+                <DialogItem name={dialogsData[2].name} id={dialogsData[2].id} />
+                <DialogItem name={dialogsData[3].name} id={dialogsData[3].id} />
+                <DialogItem name={dialogsData[4].name} id={dialogsData[4].id} />
+                <DialogItem name={dialogsData[5].name} id={dialogsData[5].id} />
+                <DialogItem name={dialogsData[6].name} id={dialogsData[6].id} />
                 <div className={s.dialog}>
                 </div>
 
 
             </div>
             <div className={s.message}>
-                <Message message='Hi' />
-                <Message message='What are you wont?' />
-                <Message message='Eto ne nashi problemi' />
+                <Message message={MessageData[0].message} />
+                <Message message={MessageData[1].message} />
+                <Message message={MessageData[2].message} />
             </div>
         </div>
     )
