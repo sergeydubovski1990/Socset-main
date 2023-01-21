@@ -21,11 +21,7 @@ const App = () => {
                 </div>
             </div>
         </BrowserRouter>
-    );
-}
-                        {/*<Route path="/music" element= {<Music/>}/>
-                        <Route path="/setting" element= {<Setting/>}/>
-                        <Route path="/news" element= {<News/>}/>*/
+    )
 }
 
 export default App;
